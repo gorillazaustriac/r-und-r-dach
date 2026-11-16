@@ -1,4 +1,4 @@
-import { MapPin, Mail, Clock3, ArrowUpRight, Phone, Building2 } from "lucide-react";
+import { MapPin, Mail, Clock3, ArrowUpRight, Phone } from "lucide-react";
 import Link from "next/link";
 import { pageMetadata } from "@/lib/seo";
 import { Breadcrumb, Eyebrow } from "@/components/sections";
@@ -7,8 +7,8 @@ import { ContactForm } from "@/components/contact-form";
 import { contactReady, phoneHref, site } from "@/config/site";
 
 export const metadata = pageMetadata(
-  "Kontakt und Dachangebot in Wien",
-  "Planen Sie Ihr Dachprojekt in Wien mit Rundrdach. Fragen Sie Dacheindeckung, Reparatur, Abdichtung, Sanierung oder weitere Dachleistungen an.",
+  "Kontakt und Dachangebot in Berlin",
+  "Planen Sie Ihr Dachprojekt in Berlin mit Rundrdach. Fragen Sie Dacheindeckung, Reparatur, Abdichtung, Sanierung oder weitere Dachleistungen an.",
   "/kontakt",
 );
 
@@ -40,31 +40,16 @@ export default async function ContactPage({ searchParams }: { searchParams: Prom
               braucht. Wir klären den nächsten Schritt.
             </p>
             <div className="contact-details">
-              {/* Registered company identity — FN and GISA for trust on the contact page. */}
-              {site.legalName && (
-                <div>
-                  <Building2 size={21} />
-                  <span>
-                    <strong>Unternehmen</strong>
-                    {site.legalName}
-                    {(site.companyNumber || site.trade.gisaNumber) && (
-                      <small>
-                        {[site.companyNumber, site.trade.gisaNumber ? "GISA-Zahl " + site.trade.gisaNumber : ""]
-                          .filter(Boolean)
-                          .join(" · ")}
-                      </small>
-                    )}
-                  </span>
-                </div>
-              )}
               <div>
                 <MapPin size={21} />
                 <span>
                   <strong>Einsatzgebiet</strong>
-                  Wien, Österreich
+                  {site.city}, {site.country}
                   {site.street && (
                     <small>
-                      {site.street}, {site.postalCode} Wien
+                      {site.street}, {site.postalCode} {site.city}
+                      <br />
+                      {site.district}
                     </small>
                   )}
                 </span>

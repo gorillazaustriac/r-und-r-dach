@@ -11,7 +11,7 @@ import {
 } from "@/data/gallery";
 
 export const metadata = pageMetadata(
-  "Referenzen und Dachprojekte in Wien",
+  "Referenzen und Dachprojekte in Berlin",
   "Portfolio von Rundrdach: Dachsanierungen, Ziegel- und Metalldächer, Abdichtung, Spenglerarbeiten und Dachstuhl — Einblicke in ausgeführte Arbeiten.",
   "/referenzen",
 );

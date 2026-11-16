@@ -460,7 +460,7 @@ export const homeImages = {
     {
       photo: photos.tiglaCeramica1,
       title: "Ziegeldeckung",
-      text: "Klassische Steildächer mit keramischer Deckung – langlebig und typisch für Wiener Wohnhäuser.",
+      text: "Klassische Steildächer mit keramischer Deckung – langlebig auf Altbauten und steilen Dachflächen.",
     },
     {
       photo: photos.tiglaMetalica,

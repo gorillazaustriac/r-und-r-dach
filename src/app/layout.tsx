@@ -16,20 +16,20 @@ import { googleSiteVerification, indexingEnabled, site, siteUrl } from "@/config
 
 export const metadata: Metadata = {
   ...(siteUrl ? { metadataBase: new URL(siteUrl) } : {}),
-  title: { default: "Rundrdach – Dacharbeiten in Wien", template: "%s | Rundrdach" },
+  title: { default: "Rundrdach – Dacharbeiten in Berlin", template: "%s | Rundrdach" },
   description:
-    "Rundrdach in Wien: Dacheindeckung, Dachreparatur, Dachabdichtung, Dachsanierung und weitere Dachleistungen. Ihr Dachprojekt verständlich planen und ein Angebot anfragen.",
+    "Rundrdach in Berlin: Dacheindeckung, Dachreparatur, Dachabdichtung, Dachsanierung und weitere Dachleistungen. Ihr Dachprojekt verständlich planen und ein Angebot anfragen.",
   applicationName: site.name,
   robots: { index: indexingEnabled, follow: indexingEnabled },
-  // HTML ownership tag for Google Search Console on www.r-und-r-dach.at.
-  verification: { google: googleSiteVerification },
+  // Search Console token is omitted until a .de property is verified.
+  ...(googleSiteVerification ? { verification: { google: googleSiteVerification } } : {}),
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  // Schema waits for full legal address; phone alone is not enough for RoofingContractor.
-  const businessReady = siteUrl && site.street && site.postalCode && site.phone && site.legalName;
+  // Schema uses the published Berlin address and phone. No company register is attached.
+  const businessReady = siteUrl && site.street && site.postalCode && site.phone;
   return (
-    <html lang="de-AT" data-scroll-behavior="smooth">
+    <html lang="de-DE" data-scroll-behavior="smooth">
       <body>
         <a className="skip-link" href="#main">
           Zum Inhalt springen
@@ -50,28 +50,15 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               "@type": "RoofingContractor",
               "@id": siteUrl + "/#business",
               name: site.name,
-              legalName: site.legalName,
               url: siteUrl,
               telephone: site.phone,
               ...(site.email ? { email: site.email } : {}),
-              // GLN is the official Austrian location number from the GISA entry.
-              ...(site.trade.gln ? { globalLocationNumber: site.trade.gln } : {}),
-              // Firmenbuch number as a structured identifier for search engines.
-              ...(site.companyNumber
-                ? {
-                    identifier: {
-                      "@type": "PropertyValue",
-                      name: "Firmenbuchnummer",
-                      value: site.companyNumber,
-                    },
-                  }
-                : {}),
               address: {
                 "@type": "PostalAddress",
                 streetAddress: site.street,
                 postalCode: site.postalCode,
                 addressLocality: site.city,
-                addressCountry: "AT",
+                addressCountry: site.countryCode,
               },
               areaServed: { "@type": "City", name: site.city },
               ...(site.socialLinks.length ? { sameAs: site.socialLinks } : {}),

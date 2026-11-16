@@ -1,4 +1,4 @@
-// Shared service model: main offers stay prominent; specialist pages target Vienna SEO and ads.
+// Shared service model: main offers stay prominent; specialist pages target Berlin SEO and ads.
 export type ServiceIcon =
   | "roof"
   | "tool"
@@ -43,12 +43,12 @@ export const services: Service[] = [
     icon: "roof",
     group: "main",
     related: ["dachsanierung", "dachdaemmung", "dachzubehoer", "spenglerarbeiten"],
-    title: "Dacheindeckung in Wien",
+    title: "Dacheindeckung in Berlin",
     description:
-      "Dacheindeckung in Wien: Neueindeckung und Austausch der Dachhaut. Informationen zu Material, Untergrund, Ablauf und Angebot bei Rundrdach.",
+      "Dacheindeckung in Berlin: Neueindeckung und Austausch der Dachhaut. Informationen zu Material, Untergrund, Ablauf und Angebot bei Rundrdach.",
     heading: "Ein neues Dach.\nVon Grund auf durchdacht.",
     intro:
-      "Eine Dacheindeckung beginnt mit dem Blick auf das gesamte Dach: Aufbau, Untergrund, Anschlüsse und die passende Dachhaut. Wir besprechen Ihr Vorhaben in Wien und klären, welche Ausführung zu Ihrem Gebäude passt.",
+      "Eine Dacheindeckung beginnt mit dem Blick auf das gesamte Dach: Aufbau, Untergrund, Anschlüsse und die passende Dachhaut. Wir besprechen Ihr Vorhaben in Berlin und klären, welche Ausführung zu Ihrem Gebäude passt.",
     overviewTitle: "Mehr als die sichtbare Oberfläche.",
     overview:
       "Die Deckung schützt das Gebäude vor Witterung. Damit sie ihre Aufgabe erfüllt, müssen Dachneigung, Unterkonstruktion und die Details an First, Traufe und Durchdringungen zusammenpassen. Bei der Planung werden bestehender Zustand und gewünschte Nutzung berücksichtigt.",
@@ -103,7 +103,7 @@ export const services: Service[] = [
           "Die Dauer hängt von Fläche, Dachform, Umfang und Wetter ab. Ein realistischer Zeitplan wird nach Prüfung des Projekts abgestimmt.",
       },
       {
-        question: "Was kostet eine Dacheindeckung in Wien?",
+        question: "Was kostet eine Dacheindeckung in Berlin?",
         answer:
           "Ein pauschaler Quadratmeterpreis bildet ein individuelles Dach häufig nicht ausreichend ab. Das Angebot berücksichtigt Material, Untergrund, Anschlüsse und Zugang.",
       },
@@ -122,12 +122,12 @@ export const services: Service[] = [
     icon: "tool",
     group: "main",
     related: ["sturmschaden-dach", "dachwartung", "dachabdichtung", "dachsanierung"],
-    title: "Dachreparatur in Wien",
+    title: "Dachreparatur in Berlin",
     description:
-      "Dachreparatur in Wien: Schäden, undichte Anschlüsse und beschädigte Dachflächen prüfen lassen. Ablauf und Angebot bei Rundrdach kennenlernen.",
+      "Dachreparatur in Berlin: Schäden, undichte Anschlüsse und beschädigte Dachflächen prüfen lassen. Ablauf und Angebot bei Rundrdach kennenlernen.",
     heading: "Schäden erkennen.\nDas Dach gezielt reparieren.",
     intro:
-      "Feuchte Stellen, verschobene Deckelemente oder beschädigte Anschlüsse können unterschiedliche Ursachen haben. Bei einer Dachreparatur in Wien steht deshalb zuerst die Prüfung des Schadens und seiner Ursache im Mittelpunkt.",
+      "Feuchte Stellen, verschobene Deckelemente oder beschädigte Anschlüsse können unterschiedliche Ursachen haben. Bei einer Dachreparatur in Berlin steht deshalb zuerst die Prüfung des Schadens und seiner Ursache im Mittelpunkt.",
     overviewTitle: "Die Ursache zählt. Nicht nur die Stelle.",
     overview:
       "Wasser kann im Dachaufbau Wege zurücklegen. Die sichtbare Stelle im Innenraum zeigt daher nicht automatisch den Eintrittspunkt. Eine gezielte Prüfung hilft, den erforderlichen Eingriff einzugrenzen und Folgeschäden zu berücksichtigen.",
@@ -201,12 +201,12 @@ export const services: Service[] = [
     icon: "water",
     group: "main",
     related: ["flachdachsanierung", "dachdaemmung", "dachreparatur", "spenglerarbeiten"],
-    title: "Dachabdichtung in Wien",
+    title: "Dachabdichtung in Berlin",
     description:
-      "Dachabdichtung in Wien für Flachdächer und Dachterrassen. Untergrund, Anschlüsse und Entwässerung verstehen und ein Angebot bei Rundrdach anfragen.",
+      "Dachabdichtung in Berlin für Flachdächer und Dachterrassen. Untergrund, Anschlüsse und Entwässerung verstehen und ein Angebot bei Rundrdach anfragen.",
     heading: "Dicht bis ins Detail.\nAuch auf flachen Dächern.",
     intro:
-      "Bei Flachdächern und Dachterrassen muss die Abdichtung zum Aufbau und zur Nutzung passen. Rundrdach ist Ihr Ansprechpartner für die Planung einer Dachabdichtung in Wien – vom Untergrund bis zu den Übergängen.",
+      "Bei Flachdächern und Dachterrassen muss die Abdichtung zum Aufbau und zur Nutzung passen. Rundrdach ist Ihr Ansprechpartner für die Planung einer Dachabdichtung in Berlin – vom Untergrund bis zu den Übergängen.",
     overviewTitle: "Ein abgestimmtes System statt Einzelmaßnahmen.",
     overview:
       "Eine Abdichtung funktioniert im Zusammenspiel von Fläche, Anschlüssen und Entwässerung. Ob eine vorhandene Schicht weiter genutzt werden kann, muss geprüft werden. Wärmedämmung und Abdichtung haben unterschiedliche Aufgaben und werden getrennt bewertet.",
@@ -279,12 +279,12 @@ export const services: Service[] = [
     icon: "gutter",
     group: "main",
     related: ["spenglerarbeiten", "dachwartung", "dacheindeckung", "dachfenster"],
-    title: "Dachzubehör und Dachentwässerung in Wien",
+    title: "Dachzubehör und Dachentwässerung in Berlin",
     description:
-      "Dachzubehör in Wien: Informationen zu Dachrinnen, Fallrohren, Anschlüssen und Schneeschutz. Passende Ergänzungen für Ihr Dach mit Rundrdach planen.",
+      "Dachzubehör in Berlin: Informationen zu Dachrinnen, Fallrohren, Anschlüssen und Schneeschutz. Passende Ergänzungen für Ihr Dach mit Rundrdach planen.",
     heading: "Ein Dach ist erst\nmit seinen Details komplett.",
     intro:
-      "Dachrinnen, Abschlüsse und Schutzbauteile erfüllen konkrete Aufgaben. Bei Dachzubehör in Wien stehen deshalb der vorhandene Dachaufbau und die passende Ausführung im Vordergrund – nicht ein einzelnes Produkt von der Stange.",
+      "Dachrinnen, Abschlüsse und Schutzbauteile erfüllen konkrete Aufgaben. Bei Dachzubehör in Berlin stehen deshalb der vorhandene Dachaufbau und die passende Ausführung im Vordergrund – nicht ein einzelnes Produkt von der Stange.",
     overviewTitle: "Passend zur Dachhaut. Und zum Gebäude.",
     overview:
       "Zubehör muss mit dem vorhandenen Material und der Dachgeometrie zusammenpassen. Auch Wasserführung, Befestigung und Übergänge sind wichtig. Die Lieferung und Montage geeigneter Bauteile werden im individuellen Leistungsumfang vereinbart.",
@@ -358,12 +358,12 @@ export const services: Service[] = [
     icon: "renovate",
     group: "specialist",
     related: ["dacheindeckung", "dachreparatur", "dachdaemmung", "dachwartung"],
-    title: "Dachsanierung in Wien",
+    title: "Dachsanierung in Berlin",
     description:
-      "Dachsanierung in Wien: umfassende Erneuerung von Dachhaut, Aufbau und Anschlüssen. Ablauf, Planung und Angebot bei Rundrdach.",
+      "Dachsanierung in Berlin: umfassende Erneuerung von Dachhaut, Aufbau und Anschlüssen. Ablauf, Planung und Angebot bei Rundrdach.",
     heading: "Das Dach erneuern.\nMit Blick auf das Ganze.",
     intro:
-      "Eine Dachsanierung in Wien geht über einzelne Schadstellen hinaus. Aufbau, Deckung und Anschlüsse werden gemeinsam betrachtet, damit die Maßnahme zum Gebäude und zum tatsächlichen Zustand passt.",
+      "Eine Dachsanierung in Berlin geht über einzelne Schadstellen hinaus. Aufbau, Deckung und Anschlüsse werden gemeinsam betrachtet, damit die Maßnahme zum Gebäude und zum tatsächlichen Zustand passt.",
     overviewTitle: "Sanierung heißt: priorisieren und abstimmen.",
     overview:
       "Nicht jedes Dach braucht eine komplette Erneuerung. Manchmal genügt eine gezielte Teilmaßnahme, manchmal ist ein neuer Aufbau sinnvoll. Die Entscheidung hängt von Zustand, Feuchtigkeit, Tragfähigkeit und den gewünschten Eigenschaften ab – und wird erst nach einer Prüfung festgelegt.",
@@ -418,7 +418,7 @@ export const services: Service[] = [
           "Ja, sofern Aufbau, Statik und Abdichtung dazu passen. Wärmedämmung und Dachhaut werden als getrennte, aber zusammenwirkende Themen geplant.",
       },
       {
-        question: "Wie lange dauert eine Dachsanierung in Wien?",
+        question: "Wie lange dauert eine Dachsanierung in Berlin?",
         answer:
           "Die Dauer hängt von Umfang, Wetter, Material und Zugang ab. Ein realistischer Zeitplan folgt nach Klärung des Leistungsumfangs.",
       },
@@ -437,12 +437,12 @@ export const services: Service[] = [
     icon: "flat",
     group: "specialist",
     related: ["dachabdichtung", "dachdaemmung", "dachwartung", "dachsanierung"],
-    title: "Flachdachsanierung in Wien",
+    title: "Flachdachsanierung in Berlin",
     description:
-      "Flachdachsanierung in Wien: Abdichtung, Gefälle, Anschlüsse und Aufbau prüfen und erneuern. Informationen und Angebot bei Rundrdach.",
+      "Flachdachsanierung in Berlin: Abdichtung, Gefälle, Anschlüsse und Aufbau prüfen und erneuern. Informationen und Angebot bei Rundrdach.",
     heading: "Flachdächer sanieren.\nFläche, Rand und Ablauf.",
     intro:
-      "Bei einer Flachdachsanierung in Wien zählen Untergrund, Gefälle, Entwässerung und Anschlüsse ebenso wie die eigentliche Abdichtung. Wir klären, welche Erneuerung für Ihr Gebäude sinnvoll ist.",
+      "Bei einer Flachdachsanierung in Berlin zählen Untergrund, Gefälle, Entwässerung und Anschlüsse ebenso wie die eigentliche Abdichtung. Wir klären, welche Erneuerung für Ihr Gebäude sinnvoll ist.",
     overviewTitle: "Ein Flachdach funktioniert nur als Ganzes.",
     overview:
       "Stehendes Wasser, undichte Ränder oder gealterte Abdichtungen können unterschiedliche Ursachen haben. Eine Sanierung betrachtet deshalb nicht nur die Fläche, sondern auch Abläufe, Aufkantungen und angrenzende Bauteile. Ob Überarbeitung oder Neuaufbau möglich ist, entscheidet der Zustand.",
@@ -516,12 +516,12 @@ export const services: Service[] = [
     icon: "metal",
     group: "specialist",
     related: ["dachzubehoer", "dacheindeckung", "dachreparatur", "dachfenster"],
-    title: "Spenglerarbeiten in Wien",
+    title: "Spenglerarbeiten in Berlin",
     description:
-      "Spenglerarbeiten in Wien: Dachrinnen, Anschlussbleche, Einfassungen und Metalldetails am Dach. Planung und Angebot bei Rundrdach.",
+      "Spenglerarbeiten in Berlin: Dachrinnen, Anschlussbleche, Einfassungen und Metalldetails am Dach. Planung und Angebot bei Rundrdach.",
     heading: "Blech und Abschluss.\nWo Wasser geführt wird.",
     intro:
-      "Spenglerarbeiten in Wien betreffen die metallenen Details am Dach: Rinnen, Fallrohre, Einfassungen und Anschlüsse. Sie müssen zur Dachhaut und zur Wasserführung passen – nicht nur optisch, sondern technisch.",
+      "Spenglerarbeiten in Berlin betreffen die metallenen Details am Dach: Rinnen, Fallrohre, Einfassungen und Anschlüsse. Sie müssen zur Dachhaut und zur Wasserführung passen – nicht nur optisch, sondern technisch.",
     overviewTitle: "Metallarbeiten sind Teil des Dachsystems.",
     overview:
       "Anschlussbleche, Kehlen und Einfassungen schützen Übergänge, an denen Deckungen und Aufbauten zusammentreffen. Material, Abmessung und Befestigung richten sich nach dem vorhandenen Dach und dem geplanten Leistungsumfang. Eine pauschale Produktwahl ohne Prüfung ist selten sinnvoll.",
@@ -595,12 +595,12 @@ export const services: Service[] = [
     icon: "inspect",
     group: "specialist",
     related: ["dachreparatur", "dachzubehoer", "flachdachsanierung", "sturmschaden-dach"],
-    title: "Dachwartung und Dachinspektion in Wien",
+    title: "Dachwartung und Dachinspektion in Berlin",
     description:
-      "Dachwartung und Dachinspektion in Wien: Zustand prüfen, Auffälligkeiten dokumentieren und sinnvolle nächste Schritte planen. Angebot bei Rundrdach.",
+      "Dachwartung und Dachinspektion in Berlin: Zustand prüfen, Auffälligkeiten dokumentieren und sinnvolle nächste Schritte planen. Angebot bei Rundrdach.",
     heading: "Das Dach im Blick.\nBevor der Schaden wächst.",
     intro:
-      "Dachwartung und Inspektion in Wien helfen, Auffälligkeiten früh zu erkennen – von loser Deckung bis zu verstopften Abläufen. Der genaue Umfang einer Prüfung wird mit Ihnen abgestimmt.",
+      "Dachwartung und Inspektion in Berlin helfen, Auffälligkeiten früh zu erkennen – von loser Deckung bis zu verstopften Abläufen. Der genaue Umfang einer Prüfung wird mit Ihnen abgestimmt.",
     overviewTitle: "Kontrolle schafft Orientierung.",
     overview:
       "Eine Inspektion ersetzt keine Sanierung, kann aber den Zustand einordnen und Prioritäten sichtbar machen. Sichtbare Mängel, Entwässerung und Anschlüsse stehen dabei im Vordergrund. Was genau geprüft und dokumentiert wird, hängt vom Dach und von Ihrer Anfrage ab.",
@@ -660,7 +660,7 @@ export const services: Service[] = [
           "Aus Sicherheitsgründen wird davon abgeraten. Eine fachliche Prüfung setzt geeignete Zugänglichkeit voraus.",
       },
       {
-        question: "Was kostet eine Dachinspektion in Wien?",
+        question: "Was kostet eine Dachinspektion in Berlin?",
         answer:
           "Der Aufwand richtet sich nach Dachgröße, Zugang und Prüfumfang. Ein Angebot wird nach Klärung dieser Punkte erstellt.",
       },
@@ -674,12 +674,12 @@ export const services: Service[] = [
     icon: "storm",
     group: "specialist",
     related: ["dachreparatur", "dachwartung", "dacheindeckung", "dachzubehoer"],
-    title: "Sturmschaden am Dach in Wien",
+    title: "Sturmschaden am Dach in Berlin",
     description:
-      "Sturmschaden am Dach in Wien: verrutschte Deckung, undichte Stellen und Folgeschäden prüfen lassen. Ablauf und Angebot bei Rundrdach.",
+      "Sturmschaden am Dach in Berlin: verrutschte Deckung, undichte Stellen und Folgeschäden prüfen lassen. Ablauf und Angebot bei Rundrdach.",
     heading: "Nach dem Unwetter.\nErst sichern, dann bewerten.",
     intro:
-      "Stürme können Dachziegel verschieben, Blechteile lösen oder Anschlüsse öffnen. Bei einem Sturmschaden am Dach in Wien steht zuerst die sichere Einschätzung des Schadens – nicht die Selbstdiagnose vom Boden aus.",
+      "Stürme können Dachziegel verschieben, Blechteile lösen oder Anschlüsse öffnen. Bei einem Sturmschaden am Dach in Berlin steht zuerst die sichere Einschätzung des Schadens – nicht die Selbstdiagnose vom Boden aus.",
     overviewTitle: "Schaden dokumentieren. Ursache und Umfang klären.",
     overview:
       "Sichtbare Lücken in der Deckung sind oft nur ein Teil des Bildes. Auch Anschlüsse, Unterspannbahn und angrenzende Bauteile können betroffen sein. Eine gezielte Prüfung hilft, Sofortmaßnahmen und längerfristige Arbeiten zu unterscheiden. Ein 24-Stunden-Notdienst wird nicht zugesagt.",
@@ -753,12 +753,12 @@ export const services: Service[] = [
     icon: "window",
     group: "specialist",
     related: ["spenglerarbeiten", "dachreparatur", "dacheindeckung", "dachzubehoer"],
-    title: "Dachfenster in Wien",
+    title: "Dachfenster in Berlin",
     description:
-      "Dachfenster in Wien: Einbau, Austausch und Abdichtung von Dachflächenfenstern. Anschluss, Ablauf und Angebot bei Rundrdach planen.",
+      "Dachfenster in Berlin: Einbau, Austausch und Abdichtung von Dachflächenfenstern. Anschluss, Ablauf und Angebot bei Rundrdach planen.",
     heading: "Mehr Licht im Dach.\nMit sauberen Anschlüssen.",
     intro:
-      "Dachfenster bringen Licht – und brauchen sorgfältige Anschlüsse an die Dachhaut. In Wien planen wir Einbau oder Austausch so, dass Fenster, Eindeckrahmen und Entwässerung zum vorhandenen Dach passen.",
+      "Dachfenster bringen Licht – und brauchen sorgfältige Anschlüsse an die Dachhaut. In Berlin planen wir Einbau oder Austausch so, dass Fenster, Eindeckrahmen und Entwässerung zum vorhandenen Dach passen.",
     overviewTitle: "Das Fenster ist nur so gut wie sein Anschluss.",
     overview:
       "Undichtigkeiten an Dachflächenfenstern entstehen oft an Eindeckrahmen, Folienanschluss oder Entwässerungsrinne – nicht am Glas selbst. Deshalb werden Einbau, Austausch und Abdichtung im Zusammenhang mit der umgebenden Dachhaut betrachtet. Produktwahl und Montageumfang werden projektbezogen vereinbart.",
@@ -832,12 +832,12 @@ export const services: Service[] = [
     icon: "insulation",
     group: "specialist",
     related: ["dachsanierung", "dacheindeckung", "flachdachsanierung", "dachabdichtung"],
-    title: "Dachdämmung in Wien",
+    title: "Dachdämmung in Berlin",
     description:
-      "Dachdämmung in Wien: Wärmeschutz im Dachaufbau planen. Zusammenspiel mit Abdichtung und Eindeckung verstehen und Angebot bei Rundrdach anfragen.",
+      "Dachdämmung in Berlin: Wärmeschutz im Dachaufbau planen. Zusammenspiel mit Abdichtung und Eindeckung verstehen und Angebot bei Rundrdach anfragen.",
     heading: "Dämmung mit System.\nNicht isoliert gedacht.",
     intro:
-      "Dachdämmung in Wien betrifft den Wärmeschutz im Dachaufbau – und muss zu Statik, Feuchteschutz und vorhandener Dachhaut passen. Wir erklären die Möglichkeiten und klären, was für Ihr Gebäude geprüft werden muss.",
+      "Dachdämmung in Berlin betrifft den Wärmeschutz im Dachaufbau – und muss zu Statik, Feuchteschutz und vorhandener Dachhaut passen. Wir erklären die Möglichkeiten und klären, was für Ihr Gebäude geprüft werden muss.",
     overviewTitle: "Dämmung ist eine Schicht – kein Allheilmittel.",
     overview:
       "Wärmedämmung und Abdichtung haben unterschiedliche Aufgaben. Eine Dämmmaßnahme ohne Blick auf Feuchteschutz, Hinterlüftung oder bestehende Schichten kann Probleme erzeugen statt lösen. Deshalb wird der gesamte Aufbau betrachtet, bevor ein Umfang vereinbart wird.",

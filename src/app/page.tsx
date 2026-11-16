@@ -8,11 +8,6 @@ import {
   Layers3,
   Mail,
   Phone,
-  BadgeCheck,
-  Landmark,
-  FileText,
-  CalendarCheck,
-  Hammer,
 } from "lucide-react";
 import { pageMetadata } from "@/lib/seo";
 import { Eyebrow, ServiceCards, Process, FAQ, CTABand } from "@/components/sections";
@@ -25,8 +20,8 @@ import { projects } from "@/data/projects";
 import { phoneHref, site } from "@/config/site";
 
 export const metadata = pageMetadata(
-  "Dacharbeiten in Wien",
-  "Dacheindeckung, Dachreparatur, Dachabdichtung, Dachsanierung und weitere Dachleistungen in Wien. Entdecken Sie Rundrdach und fragen Sie Ihr Projekt an.",
+  "Dacharbeiten in Berlin",
+  "Dacheindeckung, Dachreparatur, Dachabdichtung, Dachsanierung und weitere Dachleistungen in Berlin. Entdecken Sie Rundrdach und fragen Sie Ihr Projekt an.",
 );
 
 export default function HomePage() {
@@ -53,11 +48,11 @@ export default function HomePage() {
         href: "/referenzen",
       }));
 
-  // Marquee phrase — company identity repeated for scroll-driven strip.
+  // Marquee phrase — brand, city and address repeated for the scroll-driven strip.
   const marqueePhrase =
-    (site.legalName || "Rundrdach").toUpperCase() +
-    " · DACHARBEITEN IN WIEN · " +
-    (site.street ? site.street.toUpperCase() + ", " + site.postalCode + " WIEN · " : "") +
+    site.name.toUpperCase() +
+    " · DACHARBEITEN IN " + site.city.toUpperCase() + " · " +
+    (site.street ? site.street.toUpperCase() + ", " + site.postalCode + " " + site.city.toUpperCase() + " · " : "") +
     (site.email ? site.email.toUpperCase() + " · " : "");
 
   return (
@@ -66,7 +61,7 @@ export default function HomePage() {
         <div className="container hero-grid">
           <div className="hero-copy">
             <div data-hero="eyebrow">
-              <Eyebrow>RUND UM IHR DACH. IN WIEN.</Eyebrow>
+              <Eyebrow>{"RUND UM IHR DACH. IN " + site.city.toUpperCase() + "."}</Eyebrow>
             </div>
             <h1>
               {/* Masked line reveals — SplitLines wraps each line for GSAP. */}
@@ -74,14 +69,14 @@ export default function HomePage() {
                 <SplitLines>
                   Dacharbeiten
                   <br />
-                  in Wien.
+                  in Berlin.
                   <br />
                   <span className="muted-line">Klar geplant. Sorgfältig umgesetzt.</span>
                 </SplitLines>
               </span>
             </h1>
             <p className="hero-description" data-hero="copy">
-              Rundrdach ist Ihr Ansprechpartner für Dacharbeiten in Wien: von der{" "}
+              Rundrdach ist Ihr Ansprechpartner für Dacharbeiten in Berlin: von der{" "}
               <Link href="/dacheindeckung">Dacheindeckung</Link> über{" "}
               <Link href="/dachreparatur">Reparatur</Link> und{" "}
               <Link href="/dachabdichtung">Abdichtung</Link> bis zur{" "}
@@ -125,15 +120,15 @@ export default function HomePage() {
                 objectPosition={homeImages.heroSecondary.objectPosition}
               />
             </div>
-            {/* Company identity — legal name and address for client visibility. */}
+            {/* Brand and Berlin address on the hero photo. */}
             <div className="location-label" data-hero="label">
               <MapPin size={18} />
               <div>
-                <strong>{site.legalName || "Hier zu Hause."}</strong>
+                <strong>{site.name}</strong>
                 <span>
                   {site.street
-                    ? site.street + " · " + site.postalCode + " Wien"
-                    : "Wien, Österreich"}
+                    ? site.street + " · " + site.postalCode + " " + site.city
+                    : site.city + ", " + site.country}
                 </span>
               </div>
             </div>
@@ -158,81 +153,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Austrian trust block — Firmenbuch and GISA make the business verifiable. */}
-      <section className="section trust-section">
-        <div className="container trust-layout">
-          <div className="trust-copy" data-reveal>
-            <Eyebrow>GEPRÜFT &amp; EINGETRAGEN</Eyebrow>
-            <h2 data-split>
-              <SplitLines>
-                Eingetragener Fachbetrieb.
-                <br />
-                In Wien zu Hause.
-              </SplitLines>
-            </h2>
-            <p>
-              Die {site.legalName} ist ein im Firmenbuch eingetragenes Wiener Unternehmen mit aufrechter
-              Gewerbeberechtigung für das reglementierte Spenglerhandwerk. Alle Angaben können Sie jederzeit selbst im
-              öffentlichen Gewerbeinformationssystem (GISA) überprüfen.
-            </p>
-            <div className="trust-links">
-              <a
-                href={site.trade.verifyUrl}
-                className="text-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Im GISA-Register überprüfen <ArrowUpRight size={17} />
-              </a>
-              <Link href="/impressum" className="text-link">
-                Zum Impressum <ArrowUpRight size={17} />
-              </Link>
-            </div>
-          </div>
-          <div className="trust-grid" data-reveal-group>
-            <article className="trust-card" data-reveal-item>
-              <Hammer size={22} strokeWidth={1.4} aria-hidden="true" />
-              <span>Gewerbe</span>
-              <strong>{site.trade.wording}</strong>
-            </article>
-            <article className="trust-card" data-reveal-item>
-              <BadgeCheck size={22} strokeWidth={1.4} aria-hidden="true" />
-              <span>GISA-Zahl</span>
-              <strong>{site.trade.gisaNumber}</strong>
-            </article>
-            <article className="trust-card" data-reveal-item>
-              <FileText size={22} strokeWidth={1.4} aria-hidden="true" />
-              <span>Firmenbuch</span>
-              <strong>
-                {site.companyNumber}
-                <br />
-                {site.companyCourt}
-              </strong>
-            </article>
-            <article className="trust-card" data-reveal-item>
-              <Landmark size={22} strokeWidth={1.4} aria-hidden="true" />
-              <span>Gewerbebehörde</span>
-              <strong>{site.tradeAuthority}</strong>
-            </article>
-            <article className="trust-card" data-reveal-item>
-              <CalendarCheck size={22} strokeWidth={1.4} aria-hidden="true" />
-              <span>Gewerbe seit</span>
-              <strong>{site.trade.since}</strong>
-            </article>
-            <article className="trust-card" data-reveal-item>
-              <MapPin size={22} strokeWidth={1.4} aria-hidden="true" />
-              <span>Standort</span>
-              <strong>
-                {site.street}
-                <br />
-                {site.postalCode} Wien
-              </strong>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      {/* Scroll-driven company marquee — reinforces legal identity with motion. */}
+      {/* Scroll-driven brand marquee. */}
       <div className="identity-marquee" aria-hidden="true">
         <div className="identity-marquee-track" data-marquee>
           <span>{marqueePhrase}</span>
@@ -254,7 +175,7 @@ export default function HomePage() {
               </h2>
             </div>
             <p>
-              Ob neues Dach, einzelne Reparatur oder eine neue Abdichtung: Hier beginnt Ihr Projekt in Wien. Jede
+              Ob neues Dach, einzelne Reparatur oder eine neue Abdichtung: Hier beginnt Ihr Projekt in Berlin. Jede
               Leistung führt zu einer eigenen Seite mit Ablauf, Details und häufigen Fragen.
             </p>
           </div>
@@ -267,14 +188,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Vienna-specific reading section for on-page SEO and trust. */}
+      {/* Berlin reading section for on-page SEO and trust. Class names stay so the layout does not shift. */}
       <section className="section vienna-section">
         <div className="container vienna-grid">
           <div data-reveal>
-            <Eyebrow>DACHARBEITEN IN WIEN</Eyebrow>
+            <Eyebrow>DACHARBEITEN IN BERLIN</Eyebrow>
             <h2 data-split>
               <SplitLines>
-                Wiener Dächer.
+                Berliner Dächer.
                 <br />
                 Vielfältig – und anspruchsvoll.
               </SplitLines>
@@ -282,7 +203,7 @@ export default function HomePage() {
           </div>
           <div className="vienna-copy" data-reveal>
             <p>
-              In Wien prägen Steildächer aus der Gründerzeit und späteren Epochen ganze Straßenzüge. Ziegeldeckungen,
+              In Berlin prägen Steildächer aus der Gründerzeit und spätere Altbauten ganze Straßenzüge. Ziegeldeckungen,
               Gauben und sorgfältige Anschlüsse an Kamine und Dachfenster bestimmen das Bild – und den Unterhalt. Mit
               den Jahrzehnten kommen Undichtigkeiten, alternde Unterspannbahnen oder beschädigte Firste hinzu. Eine
               gezielte <Link href="/dachreparatur">Dachreparatur</Link> kann oft ausreichen; manchmal ist eine
@@ -388,22 +309,22 @@ export default function HomePage() {
         }
       />
 
-      {/* Service area — Vienna only, plus Standort card with company identity. */}
+      {/* Service area — Berlin, plus Standort card with company identity. */}
       <section className="section area-section">
         <div className="container area-grid">
           <div data-reveal>
             <Eyebrow>EINSATZGEBIET</Eyebrow>
             <h2 data-split>
               <SplitLines>
-                Wien.
+                Berlin.
                 <br />
                 <span className="muted-line">Unser Arbeitsgebiet.</span>
               </SplitLines>
             </h2>
-            {/* Standort card — legal name, address, email for inquiries. */}
+            {/* Standort card — brand, address and email for inquiries. */}
             <aside className="standort-card" data-reveal>
               <Eyebrow>STANDORT</Eyebrow>
-              <strong className="standort-name">{site.legalName}</strong>
+              <strong className="standort-name">{site.name}</strong>
               <ul className="standort-list">
                 {site.street && (
                   <li>
@@ -411,7 +332,9 @@ export default function HomePage() {
                     <span>
                       {site.street}
                       <br />
-                      {site.postalCode}, Wien
+                      {site.postalCode} {site.city}
+                      <br />
+                      {site.district}
                     </span>
                   </li>
                 )}
@@ -434,7 +357,7 @@ export default function HomePage() {
           </div>
           <div className="area-copy" data-reveal>
             <p>
-              Rundrdach ist in Wien für Dacharbeiten erreichbar – in allen Bezirken, sobald die Lage des Gebäudes und
+              Rundrdach ist in Berlin für Dacharbeiten erreichbar – in allen Bezirken, sobald die Lage des Gebäudes und
               die Zugänglichkeit des Dachs geklärt sind. Ob Wohnhaus, Mehrfamilienhaus oder ein kleineres Objekt: Für
               eine sinnvolle Planung brauchen wir die genaue Adresse. So lassen sich Anfahrt, Gerüst und Ablauf realistisch
               einschätzen.
@@ -490,7 +413,7 @@ export default function HomePage() {
       <FAQ
         items={[
           {
-            question: "Welche Dacharbeiten bietet Rundrdach in Wien an?",
+            question: "Welche Dacharbeiten bietet Rundrdach in Berlin an?",
             answer:
               "Die Website informiert über Dacheindeckung, Dachreparatur, Dachabdichtung und Dachzubehör sowie ergänzende Themen wie Sanierung, Flachdach, Spenglerarbeiten, Wartung, Sturmschäden, Dachfenster und Dämmung. Der konkrete Leistungsumfang für Ihr Vorhaben wird individuell abgestimmt.",
           },
@@ -510,9 +433,9 @@ export default function HomePage() {
               "Eine Reparatur ist bei geeigneten Voraussetzungen möglich. Die Prüfung zeigt, ob eine lokale Maßnahme ausreicht oder weitergehende Arbeiten sinnvoll sind.",
           },
           {
-            question: "Ist mein Bezirk in Wien im Einsatzgebiet?",
+            question: "Ist mein Bezirk in Berlin im Einsatzgebiet?",
             answer:
-              "Das angegebene Einsatzgebiet ist Wien. Beschreiben Sie bei Ihrer Anfrage die Lage des Gebäudes, damit die Möglichkeiten konkret abgestimmt werden können.",
+              "Das angegebene Einsatzgebiet ist Berlin. Beschreiben Sie bei Ihrer Anfrage die Lage des Gebäudes, damit die Möglichkeiten konkret abgestimmt werden können.",
           },
           {
             question: "Wann sollte ich wegen meines Dachs Kontakt aufnehmen?",

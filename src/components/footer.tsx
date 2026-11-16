@@ -13,24 +13,16 @@ export function Footer() {
         <div className="footer-top">
           <div>
             <Brand light />
-            {/* Legal company name — important for a registered, tax-paying business. */}
-            {site.legalName && <p className="footer-legal-name">{site.legalName}</p>}
-            {/* Firmenbuch and GISA numbers — verifiable Austrian trade identity. */}
-            {site.companyNumber && site.trade.gisaNumber && (
-              <p className="footer-register">
-                {site.companyNumber} · GISA-Zahl {site.trade.gisaNumber} · Spengler
-              </p>
-            )}
             <p>
-              Dacharbeiten in Wien.
+              Dacharbeiten in {site.city}.
               <br />
               Von der ersten Frage bis zum letzten Detail.
             </p>
             <span className="footer-location">
               <MapPin size={15} />
               {site.street
-                ? site.street + ", " + site.postalCode + " Wien"
-                : "Wien, Österreich"}
+                ? site.street + ", " + site.postalCode + " " + site.city
+                : site.city + ", " + site.country}
             </span>
             {/* Phone number is listed in the footer on every page. */}
             {phoneHref && (
@@ -84,8 +76,7 @@ export function Footer() {
         </div>
         <div className="footer-bottom">
           <span>
-            © {new Date().getFullYear()} {site.legalName || "Rundrdach"}
-            {site.legalName ? " · Rundrdach" : ""}
+            © {new Date().getFullYear()} Rundrdach
           </span>
           <div>
             <Link href="/impressum">Impressum</Link>
@@ -94,7 +85,7 @@ export function Footer() {
             <Link href="/agb">AGB</Link>
             <CookieSettingsButton />
           </div>
-          <span className="footer-country">WIEN / AT</span>
+          <span className="footer-country">{site.city.toUpperCase()} / {site.countryCode}</span>
         </div>
       </div>
     </footer>

@@ -23,7 +23,7 @@ export function ServicePage({ service }: { service: Service }) {
             name: service.title,
             description: service.description,
             serviceType: service.label,
-            areaServed: { "@type": "City", name: "Wien" },
+            areaServed: { "@type": "City", name: site.city },
             provider: { "@type": "Organization", name: site.name, url: siteUrl },
             url: siteUrl + "/" + service.slug,
           }}
@@ -34,7 +34,7 @@ export function ServicePage({ service }: { service: Service }) {
           <Breadcrumb current={service.label} href={"/" + service.slug} />
           <div className="service-hero-grid">
             <div>
-              <Eyebrow>{service.label.toUpperCase()} IN WIEN</Eyebrow>
+              <Eyebrow>{service.label.toUpperCase()} IN {site.city.toUpperCase()}</Eyebrow>
               <h1>
                 {service.heading.split("\n").map((line, i) => (
                   <span key={line} className={i === 1 ? "muted-line" : ""}>
@@ -46,7 +46,7 @@ export function ServicePage({ service }: { service: Service }) {
               <QuoteButton service={service.slug} location="service-hero" label="Angebot anfragen" />
             </div>
             <ImagePlaceholder
-              label={service.label + " · Wien"}
+              label={service.label + " · " + site.city}
               number={service.number}
               className="service-hero-image"
               src={images?.hero.src}

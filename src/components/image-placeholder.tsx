@@ -22,7 +22,7 @@ type ImagePlaceholderProps = {
  * Static imports enable blur placeholders and correct intrinsic dimensions.
  */
 export function ImagePlaceholder({
-  label = "Dacharbeiten in Wien",
+  label = "Dacharbeiten in Berlin",
   number = "01",
   className = "",
   src,

@@ -8,8 +8,8 @@ import { ImagePlaceholder } from "@/components/image-placeholder";
 
 // Indexable hub for all roof services: main offers + specialist SEO/ads landings.
 export const metadata = pageMetadata(
-  "Dachleistungen in Wien",
-  "Alle Dachleistungen von Rundrdach in Wien: Dacheindeckung, Reparatur, Abdichtung, Sanierung, Spenglerarbeiten, Wartung und weitere Spezialthemen.",
+  "Dachleistungen in Berlin",
+  "Alle Dachleistungen von Rundrdach in Berlin: Dacheindeckung, Reparatur, Abdichtung, Sanierung, Spenglerarbeiten, Wartung und weitere Spezialthemen.",
   "/leistungen",
 );
 
@@ -19,7 +19,7 @@ export default function LeistungenPage() {
       <section className="page-hero leistungen-hero">
         <div className="container">
           <Breadcrumb current="Leistungen" href="/leistungen" />
-          <Eyebrow>DACHARBEITEN IN WIEN</Eyebrow>
+          <Eyebrow>DACHARBEITEN IN BERLIN</Eyebrow>
           <h1>
             Unsere Leistungen.
             <br />
@@ -27,7 +27,7 @@ export default function LeistungenPage() {
           </h1>
           <p className="hero-description">
             Vier zentrale Bereiche bilden den Ausgangspunkt. Ergänzende Spezialseiten helfen bei gezielten Fragen – von
-            Sanierung bis Dachfenster. Jedes Vorhaben in Wien wird individuell abgestimmt.
+            Sanierung bis Dachfenster. Jedes Vorhaben in Berlin wird individuell abgestimmt.
           </p>
         </div>
       </section>

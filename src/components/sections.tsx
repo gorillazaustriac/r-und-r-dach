@@ -224,7 +224,7 @@ export function CTABand({ service = "general" }: { service?: string }) {
       <span className="cta-deco" data-rotate aria-hidden="true" />
       <div className="container cta-inner" data-reveal>
         <div>
-          <Eyebrow light>RUND UMS DACH. IN WIEN.</Eyebrow>
+          <Eyebrow light>RUND UMS DACH. IN BERLIN.</Eyebrow>
           <h2>
             Was braucht
             <br />

@@ -35,7 +35,7 @@ test("service slugs are unique and follow SEO-friendly patterns", () => {
   }
 });
 
-test("main and specialist groups match the intended Vienna page set", () => {
+test("main and specialist groups match the intended Berlin page set", () => {
   assert.equal(mainServices.length, 4);
   assert.equal(specialistServices.length, 7);
   assert.equal(
@@ -52,10 +52,10 @@ test("main and specialist groups match the intended Vienna page set", () => {
   );
 });
 
-test("each service has Vienna-focused SEO fields and complete page content", () => {
+test("each service has Berlin-focused SEO fields and complete page content", () => {
   for (const service of services) {
-    assert.ok(service.title.includes("Wien"), service.slug + " title should mention Wien");
-    assert.ok(service.description.includes("Wien"), service.slug + " description should mention Wien");
+    assert.ok(service.title.includes("Berlin"), service.slug + " title should mention Berlin");
+    assert.ok(service.description.includes("Berlin"), service.slug + " description should mention Berlin");
     assert.ok(service.description.length >= 80 && service.description.length <= 170, service.slug + " meta description length");
     assert.ok(service.heading.includes("\n"), service.slug + " heading should be two lines");
     assert.ok(service.intro.length > 80);

@@ -129,9 +129,9 @@ export function reportAdsConversion(
   url?: string,
   event?: { preventDefault: () => void },
 ): boolean {
-  if (!googleAdsId || !readConsent()?.marketing) return true;
-
   const sendTo = adsConversions[type];
+  // Empty labels are intentional on the Germany site: do not send a conversion without a real send_to.
+  if (!googleAdsId || !sendTo || !readConsent()?.marketing) return true;
   // Email conversion carries the value/currency configured in the Ads account.
   const payload: Record<string, string | number | (() => void)> = {
     send_to: sendTo,

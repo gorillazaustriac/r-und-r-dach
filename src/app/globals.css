@@ -117,7 +117,7 @@ p { line-height: 1.75; color: var(--ink-soft); }
 .value-strip .container > div { min-height: 87px; display: flex; align-items: center; gap: 16px; font-size: 11px; font-weight: 500; }
 .value-strip .container > div + div { padding-left: 38px; border-left: 1px solid var(--line); }
 .value-strip svg { color: var(--gold-dark); flex-shrink: 0; }
-/* Homepage trust section — Firmenbuch / GISA proof below the hero. */
+/* Homepage trust section — company register and Berlin address. */
 .trust-section { border-bottom: 1px solid var(--line); background: var(--white); }
 .trust-layout { display: grid; grid-template-columns: .9fr 1.1fr; gap: 60px; align-items: start; }
 .trust-copy h2 { margin-bottom: 22px; }
@@ -150,7 +150,7 @@ p { line-height: 1.75; color: var(--ink-soft); }
 .service-card p { font-size: 12px; line-height: 1.65; }
 .service-card-bottom { margin-top: 27px; display: flex; align-items: center; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 19px; }
 .service-card-bottom span { font-size: 7px; letter-spacing: .12em; font-weight: 500; }
-/* Vienna SEO reading block — longer body copy for trust and keywords. */
+/* Berlin SEO reading block — longer body copy for trust and keywords. */
 .vienna-section { border-top: 1px solid var(--line); background: var(--white); }
 .vienna-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 70px; align-items: start; }
 .vienna-copy p { font-size: 16px; line-height: 1.85; margin-bottom: 20px; max-width: 640px; }
@@ -178,7 +178,7 @@ p { line-height: 1.75; color: var(--ink-soft); }
 .step-number { display: block; color: var(--gold-dark); font-size: 12px; font-weight: 500; margin-bottom: 36px; }
 .process-step h3 { font-size: 20px; margin-bottom: 13px; }
 .process-step p { font-size: 13px; line-height: 1.8; max-width: 260px; }
-/* Service area — Wien only. */
+/* Service area — Berlin. */
 .area-section { border-bottom: 1px solid var(--line); }
 .area-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 70px; align-items: start; }
 .area-copy p { font-size: 16px; line-height: 1.85; margin-bottom: 18px; max-width: 620px; }

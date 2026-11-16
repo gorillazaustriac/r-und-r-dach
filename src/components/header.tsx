@@ -27,10 +27,9 @@ export function Header() {
     <>
       <div className="topbar">
         <div className="container">
-          {/* Company legal name stays visible site-wide for trust and imprint clarity. */}
-          <span>R&amp;R DACH PROFI GMBH · DACHARBEITEN. KLAR GEPLANT.</span>
+          <span>DACHARBEITEN. KLAR GEPLANT.</span>
           <span className="topbar-meta">
-            <i className="status-dot" /> WIEN, ÖSTERREICH
+            <i className="status-dot" /> {site.city.toUpperCase()}, {site.country.toUpperCase()}
             {/* Phone sits in the top bar so the number is visible on every page. */}
             <PhoneLink location="topbar" className="topbar-phone">
               {site.phone}

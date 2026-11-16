@@ -1,6 +1,20 @@
 import { pageMetadata } from "@/lib/seo";
-import { LegalPage, LegalDraftNotice } from "@/components/legal-page";
-export const metadata = pageMetadata("Allgemeine Geschäftsbedingungen", "Platzhalter für die projektspezifischen Vertragsbedingungen von Rundrdach.", "/agb");
+import { LegalPage } from "@/components/legal-page";
+
+export const metadata = pageMetadata(
+  "Allgemeine Geschäftsbedingungen",
+  "Auf dieser Website sind noch keine verbindlichen Allgemeinen Geschäftsbedingungen veröffentlicht.",
+  "/agb",
+);
+
 export default function Page() {
-  return <LegalPage title="AGB" href="/agb"><LegalDraftNotice/><h2>Vertragsbedingungen in Vorbereitung</h2><p>Auf dieser Website sind noch keine verbindlichen Allgemeinen Geschäftsbedingungen veröffentlicht. Eine Anfrage über die Website ist keine automatische Bestellung und begründet für sich allein keinen Werkvertrag.</p><h2>Vor Veröffentlichung festzulegen</h2><ul><li>Vertragspartner, Geltungsbereich und Zustandekommen des Vertrags</li><li>Leistungsumfang, Angebot und Änderungen</li><li>Termine, Zugang zum Gebäude und Mitwirkung</li><li>Preise, Zahlung und Abrechnung</li><li>Abnahme, Gewährleistung und Haftung</li><li>Verbraucherinformationen und gegebenenfalls Rücktrittsrechte</li></ul><p>Diese Punkte müssen auf das konkrete Geschäftsmodell und die anwendbaren österreichischen Vorgaben abgestimmt werden. Es werden keine pauschalen Garantiefristen oder Haftungsausschlüsse vorgegeben.</p></LegalPage>;
+  return (
+    <LegalPage title="AGB" href="/agb">
+      <h2>Vertragsbedingungen</h2>
+      <p>
+        Auf dieser Website sind noch keine verbindlichen Allgemeinen Geschäftsbedingungen veröffentlicht. Eine Anfrage
+        über die Website ist keine automatische Bestellung und begründet für sich allein keinen Werkvertrag.
+      </p>
+    </LegalPage>
+  );
 }

@@ -124,7 +124,7 @@ export function EmailLink({
   );
 }
 
-/** Official WhatsApp glyph — recognizable mark for Austrian trade sites. */
+/** Official WhatsApp glyph for the floating contact stack. */
 function WhatsAppIcon({ size = 26 }: { size?: number }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
